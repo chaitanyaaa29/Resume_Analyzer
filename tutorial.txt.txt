@@ -1,0 +1,51 @@
+⚙️ Installation
+git clone https://github.com/yourusername/AI-Resume-Analyzer.git
+cd AI-Resume-Analyzer
+python -m venv venv
+venv\Scripts\activate
+pip install -r requirements.txt
+
+Then open a Python shell and run:
+
+import nltk
+nltk.download('punkt')
+nltk.download('punkt_tab')
+nltk.download('stopwords')
+
+Run the app:
+
+python app.py
+
+Visit http://127.0.0.1:5000/ in your browser.
+
+💡 How It Works
+
+User pastes resume text.
+
+NLTK tokenizes and cleans it.
+
+The app finds matching skills and frequent words.
+
+Generates a readiness score (0–100).
+
+Displays insights neatly on a result page.
+
+
+openai         libraries
+streamlit 
+pdfplumber
+
+flask 
+streamlit     environment 
+
+nltk (natural language toolkit )
+because your Flask project processed text extracted from PDFs (via pdfplumber) and analyzed or summarized it (possibly using OpenAI).
+
+
+pdfplumber - read the text from pdf files
+nltk - text processing (tokenisation, summarising ,c leaning)
+open ai (like gpt) for text generation 
+
+
+flask- backend web framework 
+streamlit web app framework 
